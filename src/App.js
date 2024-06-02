@@ -1,15 +1,19 @@
-import React from "react";
-import UseState from "./component/UseState";
-import toDuList from "./component/ToDuList";
-import ToDuList from "./component/ToDuList";
+import React, {useState, useEffect} from 'react';
+
 import 'bootstrap/dist/css/bootstrap.css'
 
-function App() {
+import Effect from "./component/Effect";
+import {flushSync} from "react-dom";
 
+function App() {
+    const [show, setShow] = useState(false)
     return (
-        <div className={'container'}>
+        <div>
             {/*<UseState/>*/}
-            <ToDuList/>
+            {/*<ToDuList/>*/}
+            <button onClick={() => setShow(!show)}>Toggle</button>
+            {show && <Effect/>}
+
         </div>
     )
 }
