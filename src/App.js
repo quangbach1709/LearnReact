@@ -5,6 +5,7 @@ import appToDo from "./component/ToDolist/AppToDo";
 import ToDolist from "./component/ToDolist/ToDolist";
 import Button from "./component/ToDolist/Button";
 import Effect from "./component/F8/Effect";
+import ChatApp from "./component/F8/ChatApp";
 
 function App() {
     // const [jobs, setJob] = useState([]);
@@ -18,8 +19,8 @@ function App() {
                 setShow(!show)
             }}>Toggle
             </button>
-            {show && <Effect/>}
-
+            {/*{show && <Effect/>}*/}
+            {show && <ChatApp/>}
         </div>
     )
 }
