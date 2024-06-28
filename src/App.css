@@ -1,0 +1,26 @@
+#del, #add {
+    background-color: gray;
+    color: white;
+
+}
+
+#del, #add:hover {
+    cursor: pointer;
+}
+
+#menu {
+    background-color: dodgerblue;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+footer #page {
+    cursor: pointer;
+}
+
+.row i {
+    cursor: pointer;
+}
